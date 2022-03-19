@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.menu{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(149, 215, 248);
+    background: linear-gradient(to top,rgb(149, 215, 248),rgb(152, 148, 250) );
+    height: auto;
+    align-content: space-around 32px;
+}
+
+.menu ul{
+    display: flex;
+    align-content: space-around 33%;
+
+}
+
+ul li{
+    
+    display: flex;
+    margin: 2rem;
+
+}
+.buap{
+    position: relative;
+    width: 3rem;
+}
+.buap img{
+    width: 20vh;
+    height: auto;
+}
+.fcfm img{
+    width: 20vh;
+    height: auto;
+}
+.texto{
+    width: 70%;
+    display: inline;
+    align-content: center;
+}
+
+.texto p{
+    margin: 3px;
+    padding: 3px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+     text-shadow:2px 2px 8px #4e5be6 ; 
+
+}
+
+
+
+/*************/
+
+.wrapper {
+    
+    display: inline-flex;
+    margin-top: 12rem;
+    
+    
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    display: flex;
+    background-color: white;
+    color: var(--color);
+    border-radius: 50%;
+    padding: 23px 15px 15px 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px #00000015;
+    cursor: pointer;
+    transition: color 0.4s ease,
+    background-color 0.4s ease;
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    color: white;
+    padding: 5px 8px;
+    background-color: #000;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px #00000015;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s var(--cb);
+  }
+  
+  .wrapper .tooltip::before {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background-color: #000;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s var(--cb);
+  }
+  
+  /* Hover */
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover,
+  .wrapper .icon:hover .tooltip,
+  .wrapper .icon:hover .tooltip::before {
+    background-color: var(--color);
+    color: white;
+  }
