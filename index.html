@@ -94,7 +94,7 @@
                 <div class="content">
                     <h1 class="title">Registro</h1>
                     <div class="form">
-                        <form class="form-container" action="">
+                        <form class="form-container" action="#" method="post">
                             <div class="form-item col-5">
                                 <input class="input" id="name" type="text" required="required" />
                                 <label class="label" for="name">nombre</label>
@@ -118,6 +118,26 @@
                     </div>
                 </div>
             </div>
+
+
+            <?php
+
+            if( isset($_POST['submit'])   ){
+                $name = "NAME:".$_POST['name']."";
+                $lastname = "LASTNAME:".$_POST['lastname']."";
+                $email = "EMAIL:".$_POST['email']."";
+                $textarea = "MESSAGE:".$_POST['textarea']."";
+                $file=fopen("archivo.txt","a");
+                fwrite($file,$name);
+                fwrite($file,$lastname);
+                fwrite($file,$main);
+                fwrite($file,$textarea);
+                fclose($file);
+            }
+  
+            ?>
+
+
         </div>
 
 
