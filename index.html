@@ -31,53 +31,98 @@
         </div>
     </header>
 
-    <div class="wrapper">
-        <div class="icon" style="--color: #3B5999">
-            <div class="tooltip">Facebook</div>
-            <span>
-                <ion-icon name="logo-facebook"></ion-icon>
-            </span>
-        </div>
-        <div class="icon" style="--color: #E1308B">
-            <div class="tooltip">Instagram</div>
-            <span>
-                <ion-icon name="logo-instagram"></ion-icon>
-            </span>
-        </div>
-        <div class="icon" style="--color: #46C1F6">
-            <div class="tooltip">Twitter</div>
-            <span>
-                <ion-icon name="logo-twitter"></ion-icon>
-            </span>
-        </div>
-        <div class="icon" style="--color: #333">
-            <div class="tooltip">Github</div>
-            <span>
-                <ion-icon name="logo-github"></ion-icon>
-            </span>
-        </div>
-        <div class="icon" style="--color: #DE463B">
-            <div class="tooltip">YouTube</div>
-            <span>
-                <ion-icon name="logo-youtube"></ion-icon>
-            </span>
+    <div class="container">
+
+        <div class="wrapper">
+            <div class="icon" style="--color: #3B5999">
+                <div class="tooltip">Facebook</div>
+                <span>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </span>
+            </div>
+            <div class="icon" style="--color: #E1308B">
+                <div class="tooltip">Instagram</div>
+                <span>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </span>
+            </div>
+            <div class="icon" style="--color: #46C1F6">
+                <div class="tooltip">Twitter</div>
+                <span>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </span>
+            </div>
+            <div class="icon" style="--color: #333">
+                <div class="tooltip">Github</div>
+                <span>
+                    <ion-icon name="logo-github"></ion-icon>
+                </span>
+            </div>
+            <div class="icon" style="--color: #DE463B">
+                <div class="tooltip">YouTube</div>
+                <span>
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </span>
+            </div>
         </div>
     </div>
 
-    <main>
-
-
-        <canvas data-processing-sources="proyectojuego.pde" style="border-radius:5px;left:50px;">
-            <p>NO SUPPORT</p>
-        </canvas>
-
-    </main>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
+    <main>
 
+
+
+
+
+        <div class="vacio">
+
+        </div>
+
+        <div class="contenido">
+
+            <div class="play">
+                <canvas data-processing-sources="proyectojuego.pde" style="border-radius:5px;left:50px;">
+                    <p>NO SUPPORT</p>
+                </canvas>
+            </div>
+
+            <div class="usuario">
+                <div class="content">
+                    <h1 class="title">Registro</h1>
+                    <div class="form">
+                        <form class="form-container" action="">
+                            <div class="form-item col-5">
+                                <input class="input" id="name" type="text" required="required" />
+                                <label class="label" for="name">nombre</label>
+                            </div>
+                            <div class="form-item col-5">
+                                <input class="input" id="lastname" type="text" required="required" />
+                                <label class="label" for="lastname">apellido</label>
+                            </div>
+                            <div class="form-item">
+                                <input class="input" id="email" type="email" required="required" />
+                                <label class="label" for="email">correo</label>
+                            </div>
+                            <div class="form-item">
+                                <textarea class="textarea" id="textarea" required="required"></textarea>
+                                <label class="label" for="textarea">mensaje</label>
+                            </div>
+                            <div class="form-item">
+                                <input class="btn-enviar" type="submit" value="Enviar" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
 
 </body>
 
